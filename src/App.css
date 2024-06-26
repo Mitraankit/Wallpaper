@@ -1,6 +1,6 @@
 /* src/App.css */
 body {
-  background-color: #0c3334; /* Dark background color */
+  background-color: #0c3334; /* Light grey background color */
   font-family: Arial, sans-serif; /* Default font family */
   font-size: 16px; /* Base font size */
   line-height: 1.6; /* Line height for readability */
@@ -45,7 +45,7 @@ body {
 /* Search Bar */
 .ui.segment {
   padding: 20px;
-  background-color: #448887; /* Translucent white background for the search bar segment */
+  background-color: #448887;; /* Translucent white background for the search bar segment */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
   border-radius: 10px; /* Rounded corners for the search bar segment */
   margin: 20px;
@@ -68,7 +68,7 @@ body {
 
 .ui.action.input.large input:focus {
   outline: none;
-  border-color: #618578; /* Highlight border color on focus */
+  border-color: #618578;; /* Highlight border color on focus */
 }
 
 .ui.icon.button {
@@ -167,27 +167,4 @@ body {
 
 .wallpaper-item:hover img {
   transform: scale(1.05); /* Slight zoom effect on hover */
-}
-
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-  .ui.segment {
-    margin: 10px;
-    padding: 10px;
-  }
-  
-  .ui.icon.button {
-    padding: 10px 15px;
-    font-size: 1em;
-  }
-  
-  .wallpaper-list {
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    gap: 10px;
-    max-height: 60vh;
-  }
-  
-  .wallpaper-item {
-    padding: 5px;
-  }
 }
