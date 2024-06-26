@@ -18,7 +18,7 @@ const SearchBar = ({ onSearchSubmit }) => {
               type="text"
               value={term}
               onChange={(e) => setTerm(e.target.value)}
-              placeholder="Search for wallpapers..."
+              placeholder="Search wallpapers..."
             />
             <button className="ui icon button" type="submit">
               <i className="search icon large"></i>
