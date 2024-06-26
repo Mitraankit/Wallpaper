@@ -1,7 +1,7 @@
 /* src/App.css */
 body {
-  background-color: #0c3334; /* Background color to use as a fallback */
-  background-image: url('https://example.com/background-image.jpg'); /* Replace with your image URL */
+  background-image: url(./WhatsApp\ Image\ 2024-06-26\ at\ 5.14.01\ PM.jpeg);
+  /*background-color: #0c3334; /* Background color to use as a fallback */
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -27,7 +27,7 @@ body {
 
 .ui.segment {
   padding: 20px;
-  background-color: #448887; /* Translucent white background for the search bar segment */
+  background-color: rgba(68, 136, 135, 0.6); /* Translucent background for the search bar segment */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
   border-radius: 10px; /* Rounded corners for the search bar segment */
   margin: 20px;
