@@ -13,7 +13,6 @@ const SearchBar = ({ onSearchSubmit }) => {
     <div className="ui segment">
       <form onSubmit={onFormSubmit} className="ui form">
         <div className="field">
-          <label>Wallpaper Search</label>
           <div className="ui action input large">
             <input
               type="text"
