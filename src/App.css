@@ -1,51 +1,33 @@
 /* src/App.css */
 body {
-  background-color: #0c3334; /* Light grey background color */
+  background-color: #0c3334; /* Background color to use as a fallback */
+  background-image: url('https://example.com/background-image.jpg'); /* Replace with your image URL */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
   font-family: Arial, sans-serif; /* Default font family */
   font-size: 16px; /* Base font size */
   line-height: 1.6; /* Line height for readability */
   color: #000000; /* Default text color */
+  margin: 0;
+  padding: 0;
 }
 
-/* Header */
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  min-height: 100vh;
 }
 
 .App-header {
-  background-color: #2c3e50; /* Dark blue background for header */
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: 2rem; /* Larger font size for header */
-  color: #ffffff; /* White text color */
+  background-color: rgba(44, 62, 80, 0.8); /* Dark blue background for header */
   padding: 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  color: #ffffff; /* White text color */
 }
 
-/* Links */
-.App-link {
-  color: #376b79; /* Highlight color for links */
-  margin-top: 10px;
-}
-
-/* Search Bar */
 .ui.segment {
   padding: 20px;
-  background-color: #448887;; /* Translucent white background for the search bar segment */
+  background-color: #448887; /* Translucent white background for the search bar segment */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
   border-radius: 10px; /* Rounded corners for the search bar segment */
   margin: 20px;
@@ -55,6 +37,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.ui.action.input.large {
+  display: flex;
+  flex: 1;
 }
 
 .ui.action.input.large input {
@@ -68,7 +55,7 @@ body {
 
 .ui.action.input.large input:focus {
   outline: none;
-  border-color: #618578;; /* Highlight border color on focus */
+  border-color: #618578; /* Highlight border color on focus */
 }
 
 .ui.icon.button {
@@ -86,7 +73,6 @@ body {
   background-color: #17252a; /* Darker shade on hover */
 }
 
-/* Wallpaper List */
 .wallpaper-list {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -100,7 +86,6 @@ body {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
-/* Individual Wallpaper Item */
 .wallpaper-item {
   position: relative;
   display: flex;
@@ -167,4 +152,57 @@ body {
 
 .wallpaper-item:hover img {
   transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .App-header {
+    font-size: 1.5rem; /* Smaller font size for smaller screens */
+    padding: 10px;
+  }
+
+  .ui.segment {
+    margin: 10px;
+    padding: 10px;
+  }
+
+  .ui.icon.button {
+    padding: 10px 15px;
+    font-size: 1em; /* Smaller font size for buttons on smaller screens */
+  }
+
+  .wallpaper-list {
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .wallpaper-item {
+    padding: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .App-header {
+    font-size: 1.2rem; /* Smaller font size for very small screens */
+    padding: 5px;
+  }
+
+  .ui.segment {
+    margin: 5px;
+    padding: 5px;
+  }
+
+  .ui.icon.button {
+    padding: 5px 10px;
+    font-size: 0.8em; /* Smaller font size for buttons on very small screens */
+  }
+
+  .wallpaper-list {
+    gap: 5px;
+    padding: 5px;
+  }
+
+  .wallpaper-item {
+    padding: 5px;
+  }
 }
