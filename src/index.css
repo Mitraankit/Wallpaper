@@ -11,19 +11,3 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
-/* src/App.css */
-.wallpaper-list {
-  max-height: 70vh; /* Adjust based on your preference */
-  overflow-y: auto;
-}
-
-.wallpaper-list .item {
-  padding: 10px;
-  border-bottom: 1px solid #ddd;
-}
-
-.wallpaper-list .item img {
-  width: 100%;
-  height: auto;
-}

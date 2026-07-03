@@ -2,14 +2,17 @@
 import React from 'react';
 import Wallpaper from './Wallpaper';
 
-const WallpaperList = ({ wallpapers }) => {
-  const renderedList = wallpapers.map((wallpaper) => {
-    return <Wallpaper key={wallpaper.id} wallpaper={wallpaper} />;
-  });
-
+const WallpaperList = ({ wallpapers, isFavorite, onToggleFavorite }) => {
   return (
     <div className="wallpaper-list">
-      {renderedList}
+      {wallpapers.map((wallpaper) => (
+        <Wallpaper
+          key={wallpaper.id}
+          wallpaper={wallpaper}
+          isFavorite={isFavorite}
+          onToggleFavorite={onToggleFavorite}
+        />
+      ))}
     </div>
   );
 };
